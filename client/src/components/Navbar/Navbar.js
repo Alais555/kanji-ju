@@ -9,39 +9,37 @@ function Navbar() {
   const { isLoggedIn, logout } = useAuth();
   const links = [<BrandLink key="/" to="/" />];
 
-  if (isLoggedIn) {
+    if (! isLoggedIn) { 
+      links.push(
+        <NavLink key="signup" className="nav-item" to="/signup">
+          Sign-Up/Login
+        </NavLink>
+      );
+    }
     links.push(
-      <NavLink key="profile" className="nav-item" to="/profile">
-        Profile
-      </NavLink>
-    );
-    links.push(
-      <span key="lougout" className="nav-item" onClick={logout}>
-        Logout
-      </span>
-    );
-  } else {
-    links.push(
-      <NavLink key="signup" className="nav-item" to="/signup">
-        Sign-Up/Login
-      </NavLink>
-    );
-    links.push(
-      <NavLink key="login" className="nav-item" to="/login">
+      <NavLink key="search" className="nav-item" to="/search">
         Search
       </NavLink>
     );
+    if (isLoggedIn) {
+      links.push(
+        <NavLink key="results" className="nav-item" to="/results">
+          Results
+        </NavLink>
+      );
+    }
     links.push(
-      <NavLink key="results" className="nav-item" to="/results">
-        Results
-      </NavLink>
-    );
-    links.push(
-      <NavLink key="search" className="nav-item" to="/search">
+      <NavLink key="about" className="nav-item" to="/about">
         About Us
       </NavLink>
     );
-  }
+    if (isLoggedIn) {
+      links.push(
+        <span key="lougout" className="nav-item" onClick={logout}>
+          Logout
+        </span>
+      );
+      } 
   return <nav className="Navbar">{links}</nav>;
 }
 
