@@ -23,12 +23,12 @@ function Navbar() {
   } else {
     links.push(
       <NavLink key="signup" className="nav-item" to="/signup">
-        Sign Up
+        About
       </NavLink>
     );
     links.push(
       <NavLink key="login" className="nav-item" to="/login">
-        Login
+        Sign-Up/Login
       </NavLink>
     );
   }
@@ -38,7 +38,7 @@ function Navbar() {
 function BrandLink(props) {
   return (
     <NavLink className="nav-item brand" exact {...props}>
-      React JWT
+      Home
     </NavLink>
   );
 }
