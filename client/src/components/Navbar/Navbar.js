@@ -23,12 +23,22 @@ function Navbar() {
   } else {
     links.push(
       <NavLink key="signup" className="nav-item" to="/signup">
-        About
+        Sign-Up/Login
       </NavLink>
     );
     links.push(
       <NavLink key="login" className="nav-item" to="/login">
-        Sign-Up/Login
+        Search
+      </NavLink>
+    );
+    links.push(
+      <NavLink key="results" className="nav-item" to="/results">
+        Results
+      </NavLink>
+    );
+    links.push(
+      <NavLink key="search" className="nav-item" to="/search">
+        About Us
       </NavLink>
     );
   }
@@ -42,5 +52,6 @@ function BrandLink(props) {
     </NavLink>
   );
 }
+
 
 export default Navbar;
