@@ -4,11 +4,13 @@ import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
 // Our Components
 import { AuthProvider } from "./utils/auth";
 import ProtectedRoute from "./components/ProtectedRoute";
-import Login from "./pages/Login";
 import Profile from "./pages/Profile";
 import Signup from "./pages/Signup";
 import Home from "./pages/Home";
 import Navbar from "./components/Navbar";
+import About from "./pages/About";
+import Search from "./pages/Search";
+import Results from "./pages/Results";
 
 function App() {
   return (
@@ -17,14 +19,20 @@ function App() {
         <div>
           <Navbar />
           <Switch>
-            <ProtectedRoute exact path="/">
+            <Route exact path="/">
               <Home />
-            </ProtectedRoute>
-            <Route exact path="/login">
-              <Login />
             </Route>
             <Route exact path="/signup">
               <Signup />
+            </Route>
+            <Route exact path="/about">
+              <About />
+            </Route>
+            <Route exact path="/search">
+              <Search />
+            </Route>
+            <Route exact path="/results">
+              <Results />
             </Route>
             <ProtectedRoute exact path="/profile">
               <Profile />
