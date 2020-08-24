@@ -1,0 +1,19 @@
+.input {
+    font-size: 30px;
+    margin-top: 250px;
+    margin-bottom: 250px;
+    margin-right: 250px;
+    margin-left: 80px;
+  }
+  
+  .search {
+    font-size: 30px;
+    margin: 25px 50px;
+  }
+  
+  .picture {
+    background-image: url(./Awesome-Anime-Background.jpg);
+    background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
