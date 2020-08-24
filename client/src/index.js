@@ -7,6 +7,8 @@ import App from "./App";
 
 import registerServiceWorker from "./registerServiceWorker";
 
+import "bootstrap/dist/css/bootstrap.css";
+
 // Here is if we have an id_token in localStorage
 if (localStorage.getItem("id_token")) {
   // then we will attach it to the headers of each request from react
