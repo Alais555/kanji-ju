@@ -3,7 +3,8 @@ import "./About.css";
 
 
 const About = () => (
-  <div className="container">
+  <div className="container2">
+  <div className="container ">
     <h1>About Us</h1>
     <div className="card-user-container" />
     <div className="card-user-avatar" />
@@ -44,6 +45,9 @@ const About = () => (
       </ul>
     </div>
   </div>
+  </div>
+
+  
 
 );
 
