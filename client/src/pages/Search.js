@@ -31,7 +31,7 @@ export default class Search extends Component {
 
   render() {
     return (
-      <div className="scroll">
+    
 
       <div className="container picture">
         <div className="jumbotron bg-transparent">
@@ -54,7 +54,7 @@ export default class Search extends Component {
         </div>
 
       </div>
-      </div>
+     
 
 
       // //       // function Users() {
