@@ -5,12 +5,14 @@ import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
 import { AuthProvider } from "./utils/auth";
 import ProtectedRoute from "./components/ProtectedRoute";
 import Profile from "./pages/Profile";
+import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import Home from "./pages/Home";
 import Navbar from "./components/Navbar";
 import About from "./pages/About";
 import Search from "./pages/Search";
 import Results from "./pages/Results";
+
 
 function App() {
   return (
@@ -22,6 +24,8 @@ function App() {
             <Route exact path="/">
               <Home />
             </Route>
+             <Route exact path="/login">
+               </Route>
             <Route exact path="/signup">
               <Signup />
             </Route>

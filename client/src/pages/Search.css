@@ -9,7 +9,7 @@
     background-image: url(./Awesome-Anime-Background.jpg);
     background-position: center;
     background-repeat: no-repeat;
-    position: absolute;
+    position: initial;
     top: 1;
     left:0;
     overflow: hidden;
